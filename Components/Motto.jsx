@@ -55,7 +55,7 @@ export default function Motto() {
         </div>
 
         <figure className='relative col-span-10 flex col-start-2 justify-center xl:col-span-6'>
-          <div className='top-35 -left-10 z-10 absolute flex items-center gap-x-2 bg-[#F1F1F1] shadow-sm px-4 py-2 rounded-full'>
+          <div className='-bottom-10 md:-bottom-5 md:-left-11 lg:-left-2 xl:bottom-auto xl:top-35 -left-14 xl:-left-10 z-10 absolute flex items-center gap-x-2 bg-[#F1F1F1] shadow-sm px-4 py-2 rounded-t-[50px] rounded-bl-[50px]'>
             <FaClock className='text-[#1D1D1D]' size={14} />
             <div className='leading-tight'>
               <p className='font-semibold text-[#1D1D1D] text-sm'>Delivery</p>
@@ -68,7 +68,7 @@ export default function Motto() {
             alt='Order your favourite food - Cheese Beef Hamburger'
             width={703}
             height={678}
-            className='w-full h-auto object-contain'
+            className='w-full h-auto object-cover'
             priority
           />
         </figure>
