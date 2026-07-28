@@ -1,4 +1,5 @@
 import Header from '@/Components/Header';
+import Menu from '@/Components/Menu';
 import Motto from '@/Components/Motto';
 
 function Home() {
@@ -7,6 +8,7 @@ function Home() {
       <Header />
       <main className='overflow-x-hidden container'>
         <Motto />
+        <Menu />
       </main>
     </>
   );
