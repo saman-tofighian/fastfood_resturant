@@ -92,20 +92,20 @@ export default function Menu() {
   const filteredProducts = products.filter((p) => p.category === activeTab);
 
   return (
-    <section className='mt-20 px-[6%] w-full'>
+    <section className='mt-30 xl:mt-20 px-[6%] w-full'>
       <div className='px-5 w-full'>
         <h2 className='inline-block relative mb-8 font-extrabold text-[#C90000] text-3xl sm:text-4xl'>
           <span className='z-10 relative'>MENU</span>
           <span className='-bottom-0.5 left-0 z-0 absolute bg-[#FFF3B0] w-full h-3' />
         </h2>
       </div>
-      <div className='px-5 w-full'>
-        <ul className='flex flex-wrap gap-3 mb-10'>
+      <div className='px-5 w-full overflow-hidden'>
+        <ul className='[&::-webkit-scrollbar]:hidden flex flex-nowrap gap-3 mb-10 pb-2 lg:pb-0 [-ms-overflow-style:none] overflow-x-auto lg:overflow-x-hidden [scrollbar-width:none]'>
           {categories.map(({ name, icon: Icon }) => (
-            <li key={name}>
+            <li key={name} className='flex-shrink-0'>
               <button
                 onClick={() => setActiveTab(name)}
-                className={`flex items-center gap-x-2 px-5 py-3 rounded-full text-sm font-semibold duration-300 cursor-pointer ${
+                className={`flex items-center gap-x-2 px-5 py-3 rounded-full text-sm font-semibold whitespace-nowrap duration-300 cursor-pointer ${
                   activeTab === name
                     ? 'bg-[#FFC300] text-[#504F4F]'
                     : 'bg-[#E3E3E3] text-[#504F4F] hover:bg-[#e8e8e8]'
