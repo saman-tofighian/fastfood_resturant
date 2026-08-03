@@ -10,13 +10,13 @@ export default function Motto() {
   const totalPrice = (unitPrice * quantity).toFixed(2);
 
   return (
-    <section className='mt-10 w-full'>
-      <div className='items-center gap-x-6 grid grid-cols-12 w-full px-[6%] lg:px-0 gap-y-10 xl:gap-y-0'>
-        <div className='col-span-12 xl:col-span-5 xl:col-start-2 flex flex-col items-center xl:items-start'>
-          <h1 className='text-center xl:text-left xl:w-[70%] font-bold text-[#C90000] text-[48px] leading-tight'>
+    <section className='mt-10 w-full container'>
+      <div className='items-center gap-x-6 gap-y-10 xl:gap-y-0 grid grid-cols-12 px-[6%] lg:px-0 w-full'>
+        <div className='flex flex-col items-center xl:items-start col-span-12 xl:col-span-5 xl:col-start-2'>
+          <h1 className='xl:w-[70%] font-bold text-[#C90000] text-[48px] xl:text-left text-center leading-tight'>
             Order your favourite food
           </h1>
-          <p className='mt-4 xl:text-left text-center xl:max-w-sm text-[#504F4F] leading-8'>
+          <p className='mt-4 xl:max-w-sm text-[#504F4F] xl:text-left text-center leading-8'>
             Hamburger has many flavors, have you tried Cheese Beef Hamburger?
           </p>
 
@@ -26,7 +26,7 @@ export default function Motto() {
           </span>
 
           <div className='flex items-center gap-x-7 mt-4'>
-            <div className='flex items-center gap-x-4 bg-white px-4 py-1.5 shadow-md border border-[#E5E5E5] rounded-full'>
+            <div className='flex items-center gap-x-4 bg-white shadow-md px-4 py-1.5 border border-[#E5E5E5] rounded-full'>
               <button
                 onClick={() => setQuantity((q) => Math.min(q + 1, 99))}
                 className='text-[#7D7C7C] hover:text-[#C90000] cursor-pointer'
@@ -54,8 +54,8 @@ export default function Motto() {
           </div>
         </div>
 
-        <figure className='relative col-span-10 flex col-start-2 justify-center xl:col-span-6'>
-          <div className='-bottom-10 md:-bottom-5 md:-left-11 lg:-left-2 xl:bottom-auto xl:top-35 -left-14 xl:-left-10 z-10 absolute flex items-center gap-x-2 bg-[#F1F1F1] shadow-sm px-4 py-2 rounded-t-[50px] rounded-bl-[50px]'>
+        <figure className='relative flex justify-center col-span-10 xl:col-span-6 col-start-2'>
+          <div className='xl:top-35 -bottom-10 md:-bottom-5 xl:bottom-auto -left-14 md:-left-11 lg:-left-2 xl:-left-10 z-10 absolute flex items-center gap-x-2 bg-[#F1F1F1] shadow-sm px-4 py-2 rounded-t-[50px] rounded-bl-[50px]'>
             <FaClock className='text-[#1D1D1D]' size={14} />
             <div className='leading-tight'>
               <p className='font-semibold text-[#1D1D1D] text-sm'>Delivery</p>
