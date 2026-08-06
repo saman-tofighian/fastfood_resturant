@@ -1,92 +1,60 @@
 import Image from 'next/image';
-import {
-  FaApple,
-  FaGift,
-  FaGooglePlay,
-  FaUndo,
-  FaUtensils,
-} from 'react-icons/fa';
+import { FaApple, FaGooglePlay } from 'react-icons/fa';
 
 export default function MobileApp() {
-  const badges = [
-    { id: 1, icon: FaUndo, label: 'Refund', position: 'top-[38%] left-[8%]' },
-    {
-      id: 2,
-      icon: FaGift,
-      label: 'Use Promotions',
-      position: 'top-[22%] left-[38%]',
-    },
-    {
-      id: 3,
-      icon: FaUtensils,
-      label: 'Foods',
-      position: 'top-[68%] left-[2%]',
-    },
-  ];
-
   return (
-    <section className='mt-25 xl:mt-35 px-[6%] w-full'>
-      <div className='relative bg-[#F1F1F1] px-8 sm:px-14 py-14 rounded-[40px] overflow-hidden'>
-        <div className='items-center gap-x-10 grid grid-cols-1 lg:grid-cols-12'>
-          <div className='relative col-span-5 mb-10 lg:mb-0 h-[340px] sm:h-[400px]'>
-            <div className='top-1/2 left-1/2 absolute w-[220px] sm:w-[260px] h-[320px] sm:h-[380px] -translate-x-1/2 -translate-y-1/2'>
-              <Image
-                src='/img/mobile-app-mockup.png'
-                alt='McDonald’s mobile app'
-                fill
-                className='object-contain'
-              />
-            </div>
-
-            {badges.map(({ id, icon: Icon, label, position }) => (
-              <div
-                key={id}
-                className={`absolute ${position} z-10 flex items-center gap-x-2 bg-[#FFF3D6] shadow-sm px-3 py-2 rounded-full`}
-              >
-                <span className='flex justify-center items-center bg-[#FFC300] rounded-full w-5 h-5'>
-                  <Icon size={10} className='text-[#1D1D1D]' />
-                </span>
-                <span className='font-medium text-[#1D1D1D] text-xs whitespace-nowrap'>
-                  {label}
-                </span>
-              </div>
-            ))}
-          </div>
-
-          {/* متن و دکمه‌ها */}
-          <div className='col-span-7 lg:text-left text-center'>
-            <p className='text-[#9A9A9A] text-sm'>Exclusive offers and more</p>
-            <h2 className='mt-2 font-extrabold text-[#C90000] text-2xl sm:text-3xl'>
+    <section className='mt-16 sm:mt-20 xl:mt-35 mb-12 px-[6%] lg:pr-[6%] lg:pl-0 w-full'>
+      <div className='bg-[#E3E3E3] lg:px-14 py-10 sm:py-12 lg:py-4 rounded-[40px] sm:rounded-[56px] lg:rounded-l-none lg:rounded-tr-[500px] lg:rounded-br-[500px]'>
+        <div className='items-center gap-x-10 gap-y-10 lg:gap-y-0 grid grid-cols-1 lg:grid-cols-12'>
+          <div className='order-1 lg:order-2 col-span-12 lg:col-span-6 lg:text-left text-center'>
+            <p className='font-medium text-[#7D7C7C] xl:text-[20px] text-sm sm:text-base lg:text-lg'>
+              Exclusive offers and more
+            </p>
+            <h2 className='mt-2 font-medium text-[#C90000] xl:text-[48px] text-xl sm:text-2xl lg:text-3xl'>
               MCDONALD&apos;S MOBILE APP
             </h2>
-            <p className='mt-4 max-w-md text-[#7D7C7C] text-sm leading-7'>
+            <p className='mx-auto lg:mx-0 mt-4 max-w-xs sm:max-w-md lg:max-w-3xl text-[#323232] xl:text-[16px] text-sm leading-7 xl:leading-8'>
               As a global No. 1 fast food brand, McDonald&apos;s wishes to bring
               customers not only delicious and hygienic food at international
               standards but also the best service experience.
             </p>
 
-            <div className='flex sm:flex-row flex-col justify-center lg:justify-start items-center gap-4 mt-8'>
-              <button className='flex items-center gap-x-2 bg-[#1D1D1D] hover:bg-black px-5 py-3 rounded-full text-white duration-300 cursor-pointer'>
-                <FaApple size={20} />
+            <div className='flex sm:flex-row flex-col justify-center lg:justify-start items-center gap-3 sm:gap-4 mt-6 sm:mt-8'>
+              <button className='flex items-center gap-x-2 bg-[#504F4F] hover:bg-black px-5 sm:px-6 py-2 rounded-[50px] text-white duration-300 cursor-pointer'>
+                <FaApple size={18} className='sm:w-5 sm:h-5' />
                 <span className='text-left leading-tight'>
-                  <span className='block text-[10px] text-white/70'>
+                  <span className='block text-[9px] text-white/70 sm:text-[10px]'>
                     Download on the
                   </span>
-                  <span className='block font-semibold text-sm'>App Store</span>
+                  <span className='block font-semibold text-xs sm:text-sm'>
+                    App Store
+                  </span>
                 </span>
               </button>
 
-              <button className='flex items-center gap-x-2 bg-[#1D1D1D] hover:bg-black px-5 py-3 rounded-full text-white duration-300 cursor-pointer'>
-                <FaGooglePlay size={18} />
+              <button className='flex items-center gap-x-2 bg-[#504F4F] hover:bg-black px-5 sm:px-6 py-2 rounded-full text-white duration-300 cursor-pointer'>
+                <FaGooglePlay size={16} className='sm:w-[18px] sm:h-[18px]' />
                 <span className='text-left leading-tight'>
-                  <span className='block text-[10px] text-white/70'>
+                  <span className='block text-[9px] text-white/70 sm:text-[10px]'>
                     Download on the
                   </span>
-                  <span className='block font-semibold text-sm'>
+                  <span className='block font-semibold text-xs sm:text-sm'>
                     Google Play
                   </span>
                 </span>
               </button>
+            </div>
+          </div>
+          <div className='flex justify-center order-2 lg:order-1 col-span-12 lg:col-span-6'>
+            <div className='flex justify-center w-[350px] lg:w-[401px]'>
+              <Image
+                src='/img/mobile-app-mockup.png'
+                alt='McDonald’s mobile app'
+                width={401}
+                height={436}
+                className='w-full object-cover'
+                priority
+              />
             </div>
           </div>
         </div>
