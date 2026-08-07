@@ -1,4 +1,5 @@
 import Banner from '@/Components/Banner';
+import Footer from '@/Components/Footer';
 import Header from '@/Components/Header';
 import Menu from '@/Components/Menu';
 import MobileApp from '@/Components/MobileApp';
@@ -15,6 +16,7 @@ function Home() {
         <SaleOff />
         <MobileApp />
         <Banner />
+        <Footer />
       </main>
     </>
   );

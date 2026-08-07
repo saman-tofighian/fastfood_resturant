@@ -10,7 +10,7 @@ export default function Motto() {
   const totalPrice = (unitPrice * quantity).toFixed(2);
 
   return (
-    <section className='mt-10 w-full container'>
+    <section className='mt-10 px-[6%] xl:px-0 w-full xl:container'>
       <div className='items-center gap-x-6 gap-y-10 xl:gap-y-0 grid grid-cols-12 px-[6%] lg:px-0 w-full'>
         <div className='flex flex-col items-center xl:items-start col-span-12 xl:col-span-5 xl:col-start-2'>
           <h1 className='xl:w-[70%] font-bold text-[#C90000] text-[48px] xl:text-left text-center leading-tight'>
