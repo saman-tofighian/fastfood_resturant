@@ -3,11 +3,11 @@ import { FaApple, FaGooglePlay } from 'react-icons/fa';
 
 export default function MobileApp() {
   return (
-    <section className='mt-16 sm:mt-20 xl:mt-35 mb-12 px-[6%] lg:pr-[6%] lg:pl-0 w-full'>
-      <div className='bg-[#E3E3E3] lg:px-14 py-10 sm:py-12 lg:py-4 rounded-[40px] sm:rounded-[56px] lg:rounded-l-none lg:rounded-tr-[500px] lg:rounded-br-[500px]'>
+    <section className='mt-16 sm:mt-20 xl:mt-35 px-[6%] lg:pr-[6%] lg:pl-0 w-full'>
+      <div className='bg-[#E3E3E3] lg:px-14 py-10 sm:py-12 lg:py-4 lg:rounded-l-none rounded-tl-[500px] rounded-tr-[500px] lg:rounded-tr-[500px] lg:rounded-br-[500px]'>
         <div className='items-center gap-x-10 gap-y-10 lg:gap-y-0 grid grid-cols-1 lg:grid-cols-12'>
           <div className='order-1 lg:order-2 col-span-12 lg:col-span-6 lg:text-left text-center'>
-            <p className='font-medium text-[#7D7C7C] xl:text-[20px] text-sm sm:text-base lg:text-lg'>
+            <p className='mt-12 lg:mt-0 font-medium text-[#7D7C7C] xl:text-[20px] text-sm sm:text-base lg:text-lg'>
               Exclusive offers and more
             </p>
             <h2 className='mt-2 font-medium text-[#C90000] xl:text-[48px] text-xl sm:text-2xl lg:text-3xl'>

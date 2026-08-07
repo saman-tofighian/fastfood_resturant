@@ -1,3 +1,4 @@
+import Banner from '@/Components/Banner';
 import Header from '@/Components/Header';
 import Menu from '@/Components/Menu';
 import MobileApp from '@/Components/MobileApp';
@@ -13,6 +14,7 @@ function Home() {
         <Menu />
         <SaleOff />
         <MobileApp />
+        <Banner />
       </main>
     </>
   );
